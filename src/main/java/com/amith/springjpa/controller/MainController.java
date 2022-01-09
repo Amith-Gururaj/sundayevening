@@ -26,7 +26,7 @@ public class MainController
 	}
 	
   @PostMapping(path="/add") // Map ONLY POST Requests
-  public @ResponseBody String addItem (@RequestParam String id, @RequestParam String name) {
+  public @ResponseBody String adItem (@RequestParam String id, @RequestParam String name) {
     // @ResponseBody means the returned String is the response, not a view name
     // @RequestParam means it is a parameter from the GET or POST request	  	  
 	    String res = obj.add(id,name);
