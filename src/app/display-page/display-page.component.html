@@ -1,0 +1,12 @@
+<table class="table table-success table-striped">
+    <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+    </tr>
+    <tbody>
+        <tr *ngFor="let employee of emp">
+            <td scope="col">{{employee.eid}}</td>
+            <td scope="col">{{employee.ename}}</td>
+        </tr>
+    </tbody>
+</table>

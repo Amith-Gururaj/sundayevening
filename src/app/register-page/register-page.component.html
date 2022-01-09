@@ -1,0 +1,24 @@
+<div><b><marquee>Welcome to the Employee Registration form</marquee></b></div>
+<div>
+    <form>
+        <div>
+            <label for="id"><span class="req">* </span> Id: <small>Enter Employee Id : </small> </label>
+            <input required type="number" [(ngModel)]="employee.eid" name="id" id="id" placeholder="Enter the Employee Id...">
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="name"><span class="req">* </span> Name: <small>Enter the Employee Name : </small> </label>
+            <input required type="text" [(ngModel)]="employee.ename" name="name" id="name" maxlength="28" placeholder="Enter your fullname..." />
+        </div>
+        <br>
+        <br>
+        <div >
+            <input type="submit" name="submit_reg" value="Register" (click)="registerNow()">
+        </div>
+    </form>
+</div>
+
+<div>
+    <h1>{{message}}</h1>
+</div>
