@@ -52,7 +52,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<finalName>backend-image<finalName>
+		<finalName>backend-image</finalName>
 	</build>
 
 </project>
